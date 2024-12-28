@@ -70,7 +70,7 @@ const Message = () => {
   const [stomClient, setStomClient] = useState(null)
 
   useEffect(() => {
-    const sock = new SockJS('http://localhost:8080/ws')
+    const sock = new SockJS('https://social-backend-1-90on.onrender.com/ws')
     const stomp = Stomp.over(sock)
     setStomClient(stomp)
 
